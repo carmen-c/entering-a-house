@@ -29,6 +29,7 @@
 		1F7F19C01DD42C3A00E3A3FD /* library.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F7F19B31DD42C3A00E3A3FD /* library.jpg */; };
 		1F7F19C11DD42C3A00E3A3FD /* mysterious_lake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F7F19B41DD42C3A00E3A3FD /* mysterious_lake.jpg */; };
 		1F7F19C21DD42C3A00E3A3FD /* secret_passage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F7F19B51DD42C3A00E3A3FD /* secret_passage.jpg */; };
+		1F7F19C41DD4326C00E3A3FD /* stairs_up1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F7F19C31DD4326C00E3A3FD /* stairs_up1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		1F7F19B31DD42C3A00E3A3FD /* library.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = library.jpg; sourceTree = "<group>"; };
 		1F7F19B41DD42C3A00E3A3FD /* mysterious_lake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mysterious_lake.jpg; sourceTree = "<group>"; };
 		1F7F19B51DD42C3A00E3A3FD /* secret_passage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = secret_passage.jpg; sourceTree = "<group>"; };
+		1F7F19C31DD4326C00E3A3FD /* stairs_up1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stairs_up1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				1F7F198B1DD4108F00E3A3FD /* AppDelegate.h */,
 				1F7F198C1DD4108F00E3A3FD /* AppDelegate.m */,
 				1F7F19A11DD42B8E00E3A3FD /* front_door.jpg */,
+				1F7F19C31DD4326C00E3A3FD /* stairs_up1.jpg */,
 				1F7F19A71DD42C2000E3A3FD /* bedroom.jpg */,
 				1F7F19A51DD42C1800E3A3FD /* back_porch.jpg */,
 				1F7F19A91DD42C3A00E3A3FD /* bathroom.jpg */,
@@ -196,6 +199,7 @@
 				1F7F19BB1DD42C3A00E3A3FD /* dungeon.jpg in Resources */,
 				1F7F19B81DD42C3A00E3A3FD /* coat_room.jpg in Resources */,
 				1F7F19B61DD42C3A00E3A3FD /* bathroom.jpg in Resources */,
+				1F7F19C41DD4326C00E3A3FD /* stairs_up1.jpg in Resources */,
 				1F7F19B91DD42C3A00E3A3FD /* cursed_chalice.jpg in Resources */,
 				1F7F19A81DD42C2000E3A3FD /* bedroom.jpg in Resources */,
 				1F7F19BF1DD42C3A00E3A3FD /* labratory.jpg in Resources */,

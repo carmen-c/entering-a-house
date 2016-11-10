@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--front door-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="frontDoor" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -41,16 +41,19 @@
                             <constraint firstItem="C81-hD-cBv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="255" id="v2Z-nc-xPS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="5Y5-BT-zoQ"/>
+                    <navigationItem key="navigationItem" title="front door" id="6MV-KX-lGg">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="ekI-Rd-Ooy"/>
+                    </navigationItem>
+                    <keyCommands/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1157" y="138"/>
         </scene>
-        <!--View Controller-->
+        <!--coat room-->
         <scene sceneID="cVR-5Z-u73">
             <objects>
-                <viewController id="dSD-KP-FHC" sceneMemberID="viewController">
+                <viewController id="dSD-KP-FHC" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e3m-de-hdz"/>
                         <viewControllerLayoutGuide type="bottom" id="4g2-0S-Qc0"/>
@@ -59,27 +62,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coat_room.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lrh-RE-4KN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="coat_room.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lrh-RE-4KN">
                                 <rect key="frame" x="-212" y="21" width="1024" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="etj-0u-4UK"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fM-6B-sHI">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fM-6B-sHI">
                                 <rect key="frame" x="276" y="431" width="48" height="30"/>
                                 <state key="normal" title="Library"/>
                                 <connections>
                                     <segue destination="vZf-uX-Mul" kind="show" id="gd8-AH-836"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cI6-X4-FQx">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cI6-X4-FQx">
                                 <rect key="frame" x="256.5" y="518" width="87" height="30"/>
                                 <state key="normal" title="Dining Room"/>
                                 <connections>
                                     <segue destination="8rL-3a-tXo" kind="show" id="s38-Nq-sho"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62z-Bc-6Aq">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62z-Bc-6Aq">
                                 <rect key="frame" x="268.5" y="573" width="63" height="30"/>
                                 <state key="normal" title="Stairs Up"/>
                                 <connections>
@@ -99,15 +102,16 @@
                             <constraint firstItem="lrh-RE-4KN" firstAttribute="top" secondItem="e3m-de-hdz" secondAttribute="bottom" constant="1" id="tGa-h9-GSa"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="coat room" id="IqB-Js-X59"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bhg-lr-zMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1840" y="135"/>
         </scene>
-        <!--View Controller-->
+        <!--dining room-->
         <scene sceneID="Z9k-0H-KOn">
             <objects>
-                <viewController id="8rL-3a-tXo" sceneMemberID="viewController">
+                <viewController id="8rL-3a-tXo" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="prk-yH-22p"/>
                         <viewControllerLayoutGuide type="bottom" id="Dq5-4r-0vZ"/>
@@ -116,13 +120,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dining_room.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4aZ-MI-kR1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="dining_room.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4aZ-MI-kR1">
                                 <rect key="frame" x="-212" y="21" width="1024" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="5dR-Ro-ew7"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1o-07-Vhc">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1o-07-Vhc">
                                 <rect key="frame" x="274" y="431" width="52" height="30"/>
                                 <state key="normal" title="Kitchen"/>
                                 <connections>
@@ -138,15 +142,16 @@
                             <constraint firstItem="V1o-07-Vhc" firstAttribute="top" secondItem="4aZ-MI-kR1" secondAttribute="bottom" constant="10" id="exT-rr-bex"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="dining room" id="SAh-s9-BHt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YX0-Un-T14" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1789" y="814"/>
         </scene>
-        <!--View Controller-->
+        <!--stairs up-->
         <scene sceneID="64y-L8-9Cz">
             <objects>
-                <viewController id="lM0-nh-WBM" sceneMemberID="viewController">
+                <viewController id="lM0-nh-WBM" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fyv-4g-ElD"/>
                         <viewControllerLayoutGuide type="bottom" id="uk8-xF-rG7"/>
@@ -155,20 +160,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stairs_up.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HtY-5i-WVS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="stairs_up1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HtY-5i-WVS">
                                 <rect key="frame" x="-212" y="21" width="1024" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="xlZ-GH-nW0"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Xe-fs-Tim">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Xe-fs-Tim">
                                 <rect key="frame" x="266.5" y="431" width="67" height="30"/>
                                 <state key="normal" title="Bathroom"/>
                                 <connections>
                                     <segue destination="mf4-Ye-zwJ" kind="show" id="7j5-Dn-yJ2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOL-lc-Gg6">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOL-lc-Gg6">
                                 <rect key="frame" x="269" y="471" width="63" height="30"/>
                                 <state key="normal" title="Bedroom"/>
                                 <connections>
@@ -186,15 +191,16 @@
                             <constraint firstItem="HtY-5i-WVS" firstAttribute="top" secondItem="fyv-4g-ElD" secondAttribute="bottom" constant="1" id="tAZ-ab-TN7"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="stairs up" id="DoP-Yz-ZOl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="at1-f0-dqL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1789" y="1610"/>
         </scene>
-        <!--View Controller-->
+        <!--bathroom-->
         <scene sceneID="UmZ-NB-A4t">
             <objects>
-                <viewController id="mf4-Ye-zwJ" sceneMemberID="viewController">
+                <viewController id="mf4-Ye-zwJ" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cwd-j5-9XJ"/>
                         <viewControllerLayoutGuide type="bottom" id="2D4-la-fES"/>
@@ -203,7 +209,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bathroom.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oSh-n8-llh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bathroom.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oSh-n8-llh">
                                 <rect key="frame" x="-212" y="21" width="1024" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="nkT-Zd-vcV"/>
@@ -216,15 +222,16 @@
                             <constraint firstItem="oSh-n8-llh" firstAttribute="top" secondItem="Cwd-j5-9XJ" secondAttribute="bottom" constant="1" id="yfS-DL-zpn"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="bathroom" id="j16-6k-OH1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yhr-li-Trp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2489" y="1521"/>
         </scene>
-        <!--View Controller-->
+        <!--bedroom-->
         <scene sceneID="g4p-xR-bfQ">
             <objects>
-                <viewController id="2VR-fH-d6I" sceneMemberID="viewController">
+                <viewController id="2VR-fH-d6I" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DDe-Sm-tDX"/>
                         <viewControllerLayoutGuide type="bottom" id="GhW-ZJ-QjJ"/>
@@ -233,7 +240,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bedroom.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8qy-2D-bHa">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bedroom.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8qy-2D-bHa">
                                 <rect key="frame" x="-212" y="21" width="1024" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="Syc-1X-7ql"/>
@@ -246,15 +253,16 @@
                             <constraint firstItem="8qy-2D-bHa" firstAttribute="centerX" secondItem="4bq-22-OoX" secondAttribute="centerX" id="Z4m-Rh-J1S"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="bedroom" id="wsH-sO-0yx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yt0-l5-zS0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2485" y="2213"/>
         </scene>
-        <!--View Controller-->
+        <!--kitchen-->
         <scene sceneID="oao-b7-YRj">
             <objects>
-                <viewController id="qBy-gH-VAZ" sceneMemberID="viewController">
+                <viewController id="qBy-gH-VAZ" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2qB-Ao-9Cz"/>
                         <viewControllerLayoutGuide type="bottom" id="D2g-Dt-ssN"/>
@@ -263,17 +271,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kitchen.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ogN-m5-Gua">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="kitchen.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ogN-m5-Gua">
                                 <rect key="frame" x="-212" y="21" width="1024" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="M8e-PI-quW"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="139-oU-z0G">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="139-oU-z0G">
                                 <rect key="frame" x="261" y="431" width="78" height="30"/>
                                 <state key="normal" title="Back Porch"/>
                                 <connections>
-                                    <segue destination="qop-DZ-goe" kind="showDetail" id="erK-Yk-PU1"/>
+                                    <segue destination="qop-DZ-goe" kind="show" id="dNv-F0-tjx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -285,15 +293,16 @@
                             <constraint firstItem="ogN-m5-Gua" firstAttribute="centerX" secondItem="xdm-w6-Bhj" secondAttribute="centerX" id="rxd-3d-51u"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="kitchen" id="7v6-Fm-jxN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="70c-ls-7nY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2489" y="825"/>
         </scene>
-        <!--View Controller-->
+        <!--back porch-->
         <scene sceneID="FS0-E7-0Fl">
             <objects>
-                <viewController id="qop-DZ-goe" sceneMemberID="viewController">
+                <viewController id="qop-DZ-goe" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6fN-69-buY"/>
                         <viewControllerLayoutGuide type="bottom" id="Ooa-oM-Icy"/>
@@ -302,8 +311,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_porch.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jSC-aY-Z4E">
-                                <rect key="frame" x="-212" y="21" width="1024" height="400"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="back_porch.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jSC-aY-Z4E">
+                                <rect key="frame" x="-212" y="35" width="1024" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="Y6H-Iv-hxo"/>
                                 </constraints>
@@ -311,19 +320,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jSC-aY-Z4E" firstAttribute="top" secondItem="6fN-69-buY" secondAttribute="bottom" constant="1" id="DEg-Nk-yK8"/>
+                            <constraint firstItem="jSC-aY-Z4E" firstAttribute="top" secondItem="6fN-69-buY" secondAttribute="bottom" constant="10" id="DEg-Nk-yK8"/>
                             <constraint firstItem="jSC-aY-Z4E" firstAttribute="centerX" secondItem="Ljy-pN-ARt" secondAttribute="centerX" id="aZ8-K0-5mv"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="back porch" id="EFf-Ip-516" userLabel="back porch"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hAx-uq-3CO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3177" y="833"/>
         </scene>
-        <!--View Controller-->
+        <!--library-->
         <scene sceneID="qax-I1-F08">
             <objects>
-                <viewController id="vZf-uX-Mul" sceneMemberID="viewController">
+                <viewController id="vZf-uX-Mul" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="b4L-mA-KVG"/>
                         <viewControllerLayoutGuide type="bottom" id="wNM-c0-Vfa"/>
@@ -332,13 +342,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="library.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="smt-PW-QFM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="library.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="smt-PW-QFM">
                                 <rect key="frame" x="-212" y="21" width="1024" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="Hee-3y-8Ub"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lob-na-M4H">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lob-na-M4H">
                                 <rect key="frame" x="246.5" y="431" width="107" height="30"/>
                                 <state key="normal" title="Secret Passage"/>
                                 <connections>
@@ -354,15 +364,16 @@
                             <constraint firstItem="smt-PW-QFM" firstAttribute="top" secondItem="b4L-mA-KVG" secondAttribute="bottom" constant="1" id="gsB-4N-tvL"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="library" id="zHs-K6-2v0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JLX-s8-1vS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1777" y="-521"/>
         </scene>
-        <!--View Controller-->
+        <!--secret passage-->
         <scene sceneID="yJm-dk-4LG">
             <objects>
-                <viewController id="Hyo-Oy-Cof" sceneMemberID="viewController">
+                <viewController id="Hyo-Oy-Cof" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hYE-R3-tdd"/>
                         <viewControllerLayoutGuide type="bottom" id="pte-nd-NXB"/>
@@ -371,27 +382,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secret_passage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="U78-Nn-j9g">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="secret_passage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="U78-Nn-j9g">
                                 <rect key="frame" x="-212" y="21" width="1024" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="yhw-rt-4Z6"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhn-gW-rCR">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhn-gW-rCR">
                                 <rect key="frame" x="268.5" y="431" width="63" height="30"/>
                                 <state key="normal" title="Dungeon"/>
                                 <connections>
                                     <segue destination="ss5-Aw-lBI" kind="show" id="1pG-rg-fNV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghC-Dc-bo6">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghC-Dc-bo6">
                                 <rect key="frame" x="285" y="471" width="30" height="30"/>
                                 <state key="normal" title="Lab"/>
                                 <connections>
                                     <segue destination="cGr-VX-ozT" kind="show" id="fQJ-j4-mK5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIF-GI-jkf">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIF-GI-jkf">
                                 <rect key="frame" x="244" y="511" width="112" height="30"/>
                                 <state key="normal" title="Mysterious Lake"/>
                                 <connections>
@@ -411,15 +422,16 @@
                             <constraint firstItem="ghC-Dc-bo6" firstAttribute="top" secondItem="Vhn-gW-rCR" secondAttribute="bottom" constant="10" id="rV0-U8-l7y"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="secret passage" id="T5n-UR-Wat"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iGK-Rs-vP7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2521" y="-514"/>
         </scene>
-        <!--View Controller-->
+        <!--dungeon-->
         <scene sceneID="dTt-zX-uKu">
             <objects>
-                <viewController id="ss5-Aw-lBI" sceneMemberID="viewController">
+                <viewController id="ss5-Aw-lBI" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="41c-Ih-Czz"/>
                         <viewControllerLayoutGuide type="bottom" id="dbB-BS-e7y"/>
@@ -428,7 +440,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dungeon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YKA-4v-H5F">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="dungeon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YKA-4v-H5F">
                                 <rect key="frame" x="-212" y="21" width="1024" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="VEg-sK-cvX"/>
@@ -441,15 +453,16 @@
                             <constraint firstItem="YKA-4v-H5F" firstAttribute="centerX" secondItem="Aoe-QU-BHD" secondAttribute="centerX" id="zYL-16-nJq"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="dungeon" id="R3X-3u-16K"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ol4-1J-8lc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3261" y="-1374"/>
         </scene>
-        <!--View Controller-->
+        <!--lab-->
         <scene sceneID="u1v-Ap-5WS">
             <objects>
-                <viewController id="cGr-VX-ozT" sceneMemberID="viewController">
+                <viewController id="cGr-VX-ozT" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="B2M-CA-453"/>
                         <viewControllerLayoutGuide type="bottom" id="pzm-s5-iii"/>
@@ -458,13 +471,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="labratory.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Q0h-aT-hGN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="labratory.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Q0h-aT-hGN">
                                 <rect key="frame" x="-212" y="21" width="1024" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="cfy-GM-RtS"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLz-fh-Q53">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLz-fh-Q53">
                                 <rect key="frame" x="265.5" y="431" width="69" height="30"/>
                                 <state key="normal" title="Generator"/>
                                 <connections>
@@ -480,15 +493,16 @@
                             <constraint firstItem="eLz-fh-Q53" firstAttribute="top" secondItem="Q0h-aT-hGN" secondAttribute="bottom" constant="10" id="vr7-rI-SX3"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="lab" id="fBb-Aq-8OE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Nt-8S-KSM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3269" y="-643"/>
         </scene>
-        <!--View Controller-->
+        <!--generator-->
         <scene sceneID="CWR-rA-dNp">
             <objects>
-                <viewController id="Opp-xB-0Rr" sceneMemberID="viewController">
+                <viewController id="Opp-xB-0Rr" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AZt-pn-hIa"/>
                         <viewControllerLayoutGuide type="bottom" id="4hc-sR-93I"/>
@@ -497,7 +511,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="generator.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vCZ-Td-g1x">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="generator.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vCZ-Td-g1x">
                                 <rect key="frame" x="-212" y="21" width="1024" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="x6q-Km-fcy"/>
@@ -510,15 +524,16 @@
                             <constraint firstItem="vCZ-Td-g1x" firstAttribute="centerX" secondItem="5vb-Ly-MLc" secondAttribute="centerX" id="PCQ-i5-FkU"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="generator" id="gQU-J1-gL5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PFB-UT-Clf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3925" y="-639"/>
         </scene>
-        <!--View Controller-->
+        <!--mysterious lake-->
         <scene sceneID="Wq4-PN-1ar">
             <objects>
-                <viewController id="TWN-SX-i1M" sceneMemberID="viewController">
+                <viewController id="TWN-SX-i1M" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="155-XO-0Og"/>
                         <viewControllerLayoutGuide type="bottom" id="DHu-75-i7m"/>
@@ -527,13 +542,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mysterious_lake.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kFS-T0-VS0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="mysterious_lake.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kFS-T0-VS0">
                                 <rect key="frame" x="-212" y="21" width="1024" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="8aG-2i-38N"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqJ-qg-H0g">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqJ-qg-H0g">
                                 <rect key="frame" x="247.5" y="431" width="105" height="30"/>
                                 <state key="normal" title="Cursed Chalice"/>
                                 <connections>
@@ -549,15 +564,16 @@
                             <constraint firstItem="NqJ-qg-H0g" firstAttribute="centerX" secondItem="ymR-SM-dfR" secondAttribute="centerX" id="ffL-Z0-6ao"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="mysterious lake" id="g6a-mP-TLO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HQq-QG-IEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4081" y="109"/>
         </scene>
-        <!--View Controller-->
+        <!--cursed chalice-->
         <scene sceneID="TnL-2L-7YC">
             <objects>
-                <viewController id="xkV-AX-YdH" sceneMemberID="viewController">
+                <viewController id="xkV-AX-YdH" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WQM-jF-eS7"/>
                         <viewControllerLayoutGuide type="bottom" id="dA4-W0-f1T"/>
@@ -566,7 +582,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cursed_chalice.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="sEM-xP-fkN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cursed_chalice.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="sEM-xP-fkN">
                                 <rect key="frame" x="-212" y="21" width="1024" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="fAY-Y3-qvg"/>
@@ -579,6 +595,7 @@
                             <constraint firstItem="sEM-xP-fkN" firstAttribute="centerX" secondItem="jRo-Jy-DTI" secondAttribute="centerX" id="wIf-mQ-pUR"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="cursed chalice" id="p3c-gE-k0k"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mfb-L6-3uo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -618,6 +635,6 @@
         <image name="library.jpg" width="1024" height="1001"/>
         <image name="mysterious_lake.jpg" width="1024" height="1024"/>
         <image name="secret_passage.jpg" width="1024" height="1001"/>
-        <image name="stairs_up.jpg" width="1024" height="1001"/>
+        <image name="stairs_up1.jpg" width="1024" height="1001"/>
     </resources>
 </document>
